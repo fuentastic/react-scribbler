@@ -28,6 +28,10 @@
     "@storybook/test": "^7.6.7",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
     "storybook": "^7.6.7"
   }
 }
