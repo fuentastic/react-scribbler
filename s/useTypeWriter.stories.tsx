@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { useState } from "react";
-import { within, userEvent } from "@storybook/testing-library";
+import { within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
 
-import { useTypeWriter, TypeWriterOptions } from "./useTypeWriter";
+import { useTypeWriter, TypeWriterOptions } from "../src/hooks/useTypeWriter";
 
-// Mock component to demonstrate the useTypeWriter hook
 const TypeWriterDemo: React.FC<{ options: TypeWriterOptions }> = ({
   options,
 }) => {

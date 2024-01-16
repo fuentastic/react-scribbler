@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const getRandomTypeSpeed = (speed: number) => {
   const randomFactor = Math.random() * 0.2 + 0.9; // Random speed factor between 0.9 and 1.1
@@ -6,7 +6,7 @@ const getRandomTypeSpeed = (speed: number) => {
 };
 
 const getRandomChar = () => {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   return characters.charAt(Math.floor(Math.random() * characters.length));
 };
 
@@ -26,7 +26,7 @@ export const useHumanWriter = (
     errorChance = 0.05,
   }: HumanWriterOptions = {}
 ): string => {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     let animationFrameId: number;
@@ -37,7 +37,7 @@ export const useHumanWriter = (
     let subIndex = 0;
     let backspacing = false;
     let errorsMade = 0;
-    let msg = '';
+    let msg = "";
     let messageCompleted = false;
 
     const draw = () => {

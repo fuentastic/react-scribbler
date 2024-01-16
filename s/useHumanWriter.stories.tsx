@@ -2,7 +2,10 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
-import { useHumanWriter, HumanWriterOptions } from "./useHumanWriter"; // Adjust the import path as needed
+import {
+  useHumanWriter,
+  HumanWriterOptions,
+} from "../src/hooks/useHumanWriter"; // Adjust the import path as needed
 
 // The component that uses the custom hook
 const TypingDemo: React.FC<{
