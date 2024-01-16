@@ -4,7 +4,7 @@ module.exports = {
   cache: false,
   entry: "./src/hooks/useHumanWriter.tsx",
   output: {
-    filename: "use-typewriter.js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     library: "useTypewriter",
     libraryTarget: "umd",
